@@ -5,6 +5,8 @@ services:
       dockerfile: api/Dockerfile
     volumes:
       - ./data:/app/data
+    ports:
+      - "5000:5000"
     # 필요시 헬스체크 추가
     # expose:
     #   - "5000"
